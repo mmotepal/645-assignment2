@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>George Mason University - Computer Science Department</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner-image {
+            width: 100%;
+            height: 350px; /* Adjust this height to control the banner size */
+            overflow: hidden;
+        }
+        .banner-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the div without distortion */
+            object-position: center center; /* Centers the image */
+        }
+        header h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #006633;
+            padding: 15px; /* Reduce the padding */
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+        .sidebar .logo {
+            text-align: left; /* Align the logo to the left */
+            margin-bottom: 20px; /* Add some space below the logo */
+        }
+        .sidebar .logo img {
+            max-width: 100%; /* Adjust the size of the logo */
+            height: auto;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #FFCC33;
+            color: black;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #006633;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #FFCC33;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #006633;
+            color: white;
+            margin-top: 20px;
+        }
+        /* Survey form styles */
+        .survey-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .survey-form input, .survey-form select, .survey-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* General label styling for questions */
+        .survey-form label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .survey-form input[type="submit"] {
+            background-color: #006633;
+            color: white;
+            cursor: pointer;
+        }
+        .survey-form input[type="submit"]:hover {
+            background-color: #004d26;
+        }
+        .survey-form input[type="radio"], .survey-form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        /* Style checkboxes and radio buttons */
+        .checkbox-group, .radio-group {
+            display: inline-block;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        /* Remove bold from the option labels and reduce spacing */
+        .checkbox-group label, .radio-group label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            margin-right: 0px; /* Reduce the space between the options */
+            margin-bottom: 0px; /* Reduce the bottom space */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner-image">
+            <img src="banner.jpg" alt="University Banner">
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <!-- Sidebar/Navigation Panel -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.jpg" alt="University Logo">
+            </div>
+            <a href="part-1.html">Home</a>
+            <a href="#about">About the Department</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#required-courses">Required Courses</a>
+            <a href="#ms-degrees">Related Programs</a>
+            <a href="http://13.58.93.114/form.html">Survey Form Page</a> <!-- Link to survey form -->
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <h1>College of Engineering and Computing - Computer Science Department</h1>
+            <h2 id="about">About the Department</h2>
+            <p>Mason offers 132 degree programs at the master’s, doctoral, and professional levels, as well as more than 100 graduate-level certificates. Many classes are offered at times and locations that allow you to continue to work while pursuing your degree. George Mason provides classes in multiple places, with regional campuses in Fairfax, Arlington, and Prince William counties, an international branch campus in Songdo, South Korea, and instructional sites in Herndon, Lorton, Woodbridge, and Front Royal. Each George Mason campus plays a critical role in the economy and community of its surrounding region. At each campus, students and faculty have access to all the university's resources, while the duplication of programs and support services is minimized through the use of technology.The field of computing refers to a variety of processes grounded in computational thinking. 
+                These processes include designing and constructing software systems to process information, to create communications and entertainment, and to identify information relevant to a particular purpose or problem. The emergence of new computing industries, the increased reliance on computation in all parts of society, and the demand for computing throughout a worldwide economy reflect computing's broad applications. 
+                As the field of computing has evolved, jobs in many fields now focus on the use of software.The Computer Science graduate program prepares students for research and professional practice in computer science and related technologies. 
+                The program includes both fundamentals and advanced work in the areas of artificial intelligence and databases, programming languages and software engineering, systems and networks, 
+                theoretical computer science, and visual computing. Graduate classes are divided into basic classes, which have no graduate course prerequisite, and advanced classes, 
+                which have a graduate class as a prerequisite. Graduate classes are generally offered in the late afternoon and evening. 
+                Financial aid in the form of graduate assistantships may be available for full-time degree-seeking students.The Computer Science Department at George Mason University offers a diverse range of programs designed to provide students with the 
+                knowledge and skills necessary to thrive in the tech industry. The department focuses on research, innovation, and preparing students 
+                for the challenges of the modern digital world. With strong ties to local 
+                industry and a commitment to academic excellence, the department is a leader in computer science education.</p>
+
+            <h2 id="admissions">Admissions</h2>
+            <p>In addition to fulfilling Mason's admission requirements for graduate study, applicants must hold a four-year (120-credit minimum) baccalaureate degree in an appropriate discipline from an accredited institution and have earned a GPA of 3.00 or better in the last 60 credits of undergraduate study. The baccalaureate degree must include the following subjects:
+                <ul><li>Calculus I and II (equivalent to MATH 113 Analytic Geometry and Calculus I (Mason Core) and  MATH 114 Analytic Geometry and Calculus II)</li>
+                    <li>Introductory and Object-Oriented Programming (equivalent to CS 112 Introduction to Computer Programming (Mason Core) and CS 211 Object-Oriented Programming )</li>
+                    <li>Discrete Mathematics (equivalent to MATH 125 Discrete Mathematics I (Mason Core))</li>
+                    <li>Computer Architecture including Assembly Language (equivalent to CS 367 Computer Systems and Programming)</li>
+                    <li>Data Structures and Algorithms (equivalent to CS 310 Data Structures)</li>
+                    <li>Automata Theory and Formal Languages (equivalent to CS 330 Formal Methods and Models)</li>
+                </ul>        
+            </p>
+
+            <h2 id="required-courses">Required Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Number</th>
+                        <th>Course Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS 550</td>
+                        <td>Database Systems</td>
+                    </tr>
+                    <tr>
+                        <td>CS 551</td>
+                        <td>Computer Graphics</td>
+                    </tr>
+                    <tr>
+                        <td>CS 571</td>
+                        <td>Operating Systems</td>
+                    </tr>
+                    <tr>
+                        <td>CS 580</td>
+                        <td>Introduction to Artificial Intelligence</td>
+                    </tr>
+                    <tr>
+                        <td>CS 583</td>
+                        <td>Analysis of Algorithms</td>
+                    </tr>
+                    <tr>
+                        <td>CS 584</td>
+                        <td>Theory and Applications of Data Mining</td>
+                    </tr>
+                    <tr>
+                        <td>ISA 562</td>
+                        <td>Information Security Theory</td>
+                    </tr>
+                    <tr>
+                        <td>SWE 619</td>
+                        <td>Object-Oriented Software Specification and Construction</td>
+                    </tr>
+                    <tr>
+                        <td>SWE 621</td>
+                        <td>Software Design and Architecture</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="ms-degrees">Related Programs</h2>
+            <ul>
+                <li>Information Systems, MS (CS)</li>
+                <li>Software Engineering Graduate Certificate</li>
+                <li>Software Engineering, MS</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 George Mason University - Computer Science Department</p>
+    </footer>
+</body>
+</html>
